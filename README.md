@@ -151,7 +151,10 @@ NOTE: Here we only provide basic steps to run our codes on the NIH dataset.
         as well as the "is_organ" function in utils.py to define your mapping function flexibly.
 
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)**LAZY MODE!**![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+**LAZY MODE!**
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
 You can run all the following modules with **one** execution!
 a) Enable everything (except initialization) in the beginning part.
 b) Set all the "PLANE" variables as "A" (4 in total) in the following part.
