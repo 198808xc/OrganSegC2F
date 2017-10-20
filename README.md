@@ -38,41 +38,39 @@ It is highly recommended to use one or more modern GPUs for computation.
 # 2. File List
 
 | Folder/File                | Description                                          |
-|:-------------------------- | ----------------------------------------------------:|
-| `DATA2NPY/`                | codes to transfer the NIH dataset into NPY format    |
-| --------------------------:| ----------------------------------------------------:|
+|:-------------------------- |:---------------------------------------------------- |
+| **DATA2NPY/**              | codes to transfer the NIH dataset into NPY format    |
 | `dicom2npy.py`             | transferring image data (DICOM) into NPY format      |
 | `nii2npy.py`               | transferring label data (NII) into NPY format        |
-
-
-DiceLossLayer/			          	CPU implementation of the Dice loss layer
-    dice_loss_layer.hpp	    		the header file
-    dice_loss_layer.cpp   			the CPU implementation
-
-OrganSegC2F/	            			primary codes of OrganSegC2F
-    prototxts/	          			prototxt files
-        deploy_1.prototxt		  	the prototxt file for 1-slice testing
-        deploy_3.prototxt		  	the prototxt file for 3-slice testing
-        training_C1.prototxt		the prototxt file for 1-slice coarse-scaled training
-        training_C3.prototxt		the prototxt file for 3-slice coarse-scaled training
-        training_F1.prototxt		the prototxt file for 1-slice fine-scaled training
-        training_F3.prototxt		the prototxt file for 3-slice fine-scaled training
-    coarse2fine_testing.py			the coarse-to-fine testing process
-    coarse_fusion.py			      the coarse-scaled fusion process
-    coarse_surgery.py			      the surgery function for coarse-scaled training
-    coarse_testing.py			      the coarse-scaled testing process
-    coarse_training.py			    the coarse-scaled training process
-    DataC.py				            the data layer in the coarse-scaled training
-    DataF.py				            the data layer in the fine-scaled training
-    fine_surgery.py				      the surgery function for fine-scaled training
-    fine_training.py			      the fine-scaled training process
-    init.py					            the initialization functions
-    oracle_fusion.py			      the fusion process with oracle information
-    oracle_testing.py			      the testing process with oracle information
-    run.sh					            the main program to be called in bash shell
-    utils.py				            the common functions
-
-README.txt			          		the README file
+|                            |                                                      |
+| **DiceLossLayer/**         | CPU implementation of the Dice loss layer            |
+| `dice_loss_layer.hpp`      | the header file                                      |
+| `dice_loss_layer.cpp`      | the CPU implementation                               |
+|                            |                                                      |
+| **OrganSegC2F/**           | primary codes of OrganSegC2F                         |
+| **prototxts/**             | prototxt files                                       |
+| `deploy_1.prototxt`        | the prototxt file for 1-slice testing                |
+| `deploy_3.prototxt`        | the prototxt file for 3-slice testing                |
+| `training_C1.prototxt`     | the prototxt file for 1-slice coarse-scaled training |
+| `training_C3.prototxt`     | the prototxt file for 3-slice coarse-scaled training |
+| `training_F1.prototxt`     | the prototxt file for 1-slice fine-scaled training   |
+| `training_F3.prototxt`     | the prototxt file for 3-slice fine-scaled training   |
+| `coarse2fine_testing.py`   | the coarse-to-fine testing process                   |
+| `coarse_fusion.py`         | the coarse-scaled fusion process                     |
+| `coarse_surgery.py`        | the surgery function for coarse-scaled training      |
+| `coarse_testing.py`        | the coarse-scaled testing process                    |
+| `coarse_training.py`       | the coarse-scaled training process                   |
+| `DataC.py`                 | the data layer in the coarse-scaled training         |
+| `DataF.py`                 | the data layer in the fine-scaled training           |
+| `fine_surgery.py`          | the surgery function for fine-scaled training        |
+| `fine_training.py`         | the fine-scaled training process                     |
+| `init.py`                  | the initialization functions                         |
+| `oracle_fusion.py`         | the fusion process with oracle information           |
+| `oracle_testing.py`        | the testing process with oracle information          |
+| `run.sh`                   | the main program to be called in bash shell          |
+| `utils.py`                 | the common functions                                 |
+|                            |                                                      |
+| `README.txt`               | the README file                                      |
 
 
 # 3. Installation
