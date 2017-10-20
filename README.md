@@ -37,11 +37,13 @@ It is highly recommended to use one or more modern GPUs for computation.
 
 # 2. File List
 
-ROOT/
+| Folder/File                | Description                                          |
+|:-------------------------- | ----------------------------------------------------:|
+| `DATA2NPY/`                | codes to transfer the NIH dataset into NPY format    |
+| --------------------------:| ----------------------------------------------------:|
+| `dicom2npy.py`             | transferring image data (DICOM) into NPY format      |
+| `nii2npy.py`               | transferring label data (NII) into NPY format        |
 
-DATA2NPY/                       codes to transfer the NIH dataset into NPY format
-    dicom2npy.py                transferring image data (DICOM) into NPY format
-    nii2npy.py		          		transferring label data (NII) into NPY format
 
 DiceLossLayer/			          	CPU implementation of the Dice loss layer
     dice_loss_layer.hpp	    		the header file
