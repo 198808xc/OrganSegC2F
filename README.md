@@ -39,6 +39,8 @@ It is highly recommended to use one or more modern GPUs for computation.
 
 | Folder/File                | Description                                          |
 |:-------------------------- |:---------------------------------------------------- |
+| `README.txt`               | the README file                                      |
+|                            |                                                      |
 | **DATA2NPY/**              | codes to transfer the NIH dataset into NPY format    |
 | `dicom2npy.py`             | transferring image data (DICOM) into NPY format      |
 | `nii2npy.py`               | transferring label data (NII) into NPY format        |
@@ -48,13 +50,6 @@ It is highly recommended to use one or more modern GPUs for computation.
 | `dice_loss_layer.cpp`      | the CPU implementation                               |
 |                            |                                                      |
 | **OrganSegC2F/**           | primary codes of OrganSegC2F                         |
-| **prototxts/**             | prototxt files                                       |
-| `deploy_1.prototxt`        | the prototxt file for 1-slice testing                |
-| `deploy_3.prototxt`        | the prototxt file for 3-slice testing                |
-| `training_C1.prototxt`     | the prototxt file for 1-slice coarse-scaled training |
-| `training_C3.prototxt`     | the prototxt file for 3-slice coarse-scaled training |
-| `training_F1.prototxt`     | the prototxt file for 1-slice fine-scaled training   |
-| `training_F3.prototxt`     | the prototxt file for 3-slice fine-scaled training   |
 | `coarse2fine_testing.py`   | the coarse-to-fine testing process                   |
 | `coarse_fusion.py`         | the coarse-scaled fusion process                     |
 | `coarse_surgery.py`        | the surgery function for coarse-scaled training      |
@@ -70,7 +65,13 @@ It is highly recommended to use one or more modern GPUs for computation.
 | `run.sh`                   | the main program to be called in bash shell          |
 | `utils.py`                 | the common functions                                 |
 |                            |                                                      |
-| `README.txt`               | the README file                                      |
+| **OrganSegC2F/prototxts**  | primary codes of OrganSegC2F                         |
+| `deploy_1.prototxt`        | the prototxt file for 1-slice testing                |
+| `deploy_3.prototxt`        | the prototxt file for 3-slice testing                |
+| `training_C1.prototxt`     | the prototxt file for 1-slice coarse-scaled training |
+| `training_C3.prototxt`     | the prototxt file for 3-slice coarse-scaled training |
+| `training_F1.prototxt`     | the prototxt file for 1-slice fine-scaled training   |
+| `training_F3.prototxt`     | the prototxt file for 3-slice fine-scaled training   |
 
 
 # 3. Installation
@@ -150,17 +151,11 @@ NOTE: Here we only provide basic steps to run our codes on the NIH dataset.
         as well as the "is_organ" function in utils.py to define your mapping function flexibly.
 
 
-============================================ LAZY MODE! ============================================
-|                                                                                                  |
-| You can run all the following modules with one execution!                                        |
-|                                                                                                  |
-| a) Enable everything (except initialization) in the beginning part.                              |
-|                                                                                                  |
-| b) Set all the "PLANE" variables as "A" (4 in total) in the following part.                      |
-|                                                                                                  |
-| c) Run this manuscript!                                                                          |
-|                                                                                                  |
-============================================ LAZY MODE! ============================================
+<span style="color:red">**LAZY MODE!**</span>
+You can run all the following modules with **one** execution!
+a) Enable everything (except initialization) in the beginning part.
+b) Set all the "PLANE" variables as "A" (4 in total) in the following part.
+c) Run this manuscript!
 
 
 ## 4.3 Coarse-scaled training (requires: 4.2)
