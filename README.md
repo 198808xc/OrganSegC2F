@@ -274,6 +274,8 @@ The current version is v1.10.
 
 To access old versions, please visit our project page: http://lingxixie.com/Projects/OrganSegC2F.html.
 
+You can also view CHANGE_LOG.txt for the history of versions.
+
 
 ## 6. Contact Information
 
