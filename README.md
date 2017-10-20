@@ -1,26 +1,20 @@
-####################################################################################################
-#                                                                                                  #
-# OrganSegC2F: a coarse-to-fine organ segmentation framework                                       #
-#                                                 version 1.10 - Sep 21 2017 - by Lingxi Xie       #
-#                                                                                                  #
-# If you use our codes, please cite our paper accordingly:                                         #
-#     Yuyin Zhou, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,               #
-#         "A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",                   #
-#         in International Conference on MICCAI, Quebec City, Quebec, Canada, 2017.                #
-#                                                                                                  #
-#     https://arxiv.org/abs/1612.08230                                                             #
-#                                                                                                  #
-#     http://bigml.cs.tsinghua.edu.cn/~lingxi/Projects/OrganSegC2F.html                            #
-#                                                                                                  #
-# All the materials released in this library can ONLY be used for RESEARCH purposes.               #
-#     The authors preserve the copyright and all legal rights of these codes.                      #
-#                                                                                                  #
-####################################################################################################
+# OrganSegC2F: a coarse-to-fine organ segmentation framework
+version 1.10 - Sep 21 2017 - by Lingxi Xie
+
+If you use our codes, please cite our paper accordingly:
+  Yuyin Zhou, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
+    "A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",
+    in International Conference on MICCAI, Quebec City, Quebec, Canada, 2017.
+
+https://arxiv.org/abs/1612.08230
+
+http://lingxixie.com/Projects/OrganSegC2F.html
+
+All the materials released in this library can ONLY be used for RESEARCH purposes.
+  The authors preserve the copyright and all legal rights of these codes.
 
 
-####################################################################################################
-
-1. Introduction
+# 1. Introduction
 
 
 OrganSegC2F is a code package for our paper:
