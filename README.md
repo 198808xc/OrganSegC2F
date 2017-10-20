@@ -268,7 +268,14 @@ NOTE: currently we set the maximal rounds of iteration to be 10 in order to obse
 Congratulations! You have finished the entire process. Check your results now!
 
 
-## 5. Contact Information
+## 5. Versions
+
+The current version is v1.10.
+
+To access old versions, please visit our project page: http://lingxixie.com/Projects/OrganSegC2F.html.
+
+
+## 6. Contact Information
 
 If you encounter any problems in using these codes, please contact Lingxi Xie (198808xc@gmail.com).
 
