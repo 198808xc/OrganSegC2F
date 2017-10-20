@@ -1,0 +1,113 @@
+OrganSegC2F_v1.0
+
+ - Original release.
+
+
+OrganSegC2F_v1.1
+
+ - OrganSegC2F/DataF.py:
+     . Added the 3-slice-predict-3-slice strategy, which improves the performance.
+     . Changed the distribution of the random margins added to four sides.
+
+ - OrganSegC2F/coarse_fusion.py:
+     . Changed the definition of thresholds (this does not impact the results).
+
+ - OrganSegC2F/oracle_fusion.py:
+     . Added codes for 3-slice-predict-3-slice.
+     . Changed the definition of thresholds (this does not impact the results).
+
+ - OrganSegC2F/coarse2fine_testing.py:
+     . Added codes for 3-slice-predict-3-slice.
+     . Changed the definition of thresholds (this slightly improves the results).
+
+ - OrganSegC2F/prototxts/
+     . Added the prototxt and deploy files for 3-slice-predict-3-slice.
+     . Renamed the files (the corresponding changes were also made in other codes).
+
+
+OrganSegC2F_v1.2
+
+ - OrganSegC2F/DataC.py:
+     . Added the 3-slice-predict-3-slice strategy, which improves the performance.
+
+ - OrganSegC2F/run.sh:
+     . Changed the parameter list for some modules.
+     . Slightly changed the naming method for snapshots and testing results.
+
+ - OrganSegC2F/coarse_training.py
+     . Allowed 3-slice-predict-3-slice coarse-scaled training.
+
+ - OrganSegC2F/coarse_testing.py
+     . Allowed 3-slice-predict-3-slice coarse-scaled testing.
+
+ - OrganSegC2F/prototxts/
+     . Added prototxt and deploy files for 3-slice-predict-3-slice training and testing.
+
+
+OrganSegC2F_v1.3
+
+ - OrganSegC2F/run.sh:
+     . Changed the default TRAINING_MARGIN to 20 for better results.
+
+ - OrganSegC2F/coarse2fine_testing.py
+     . Fixed a small bug involving the path definition (no impacts on the results).
+     . Fixed a small bug which will exit the program when all tasks are finished beforehand.
+
+
+OrganSegC2F_v1.4
+
+ - OrganSegC2F/utils.py
+     . Fixed a bug in data split (fortunately, the split on the NIH dataset is correct).
+     . Allowed a flexible definition of between organ_ID and label.
+
+
+OrganSegC2F_v1.5
+
+ - OrganSegC2F/utils.py
+     . Fixed a bug in data split (the split on the NIH dataset is correct).
+
+
+OrganSegC2F_v1.6
+
+ - OrganSegC2F/utils.py
+     . Fixed a bug in finding most recent snapshots and results.
+
+ - OrganSegC2F/oracle_testing.py
+     . Fixed a bug in the logical order of codes (no impacts on the current results).
+
+
+OrganSegC2F_v1.7
+
+ - OrganSegC2F/run.sh
+     . "Lazy Mode" added, which allows to run everything within 1 click (see README for details).
+     . "PLANE" variables can be set as "A": training/testing all three planes orderly.
+
+ - OrganSegC2F/init.py
+     . Sliced image data are not truncated any more (no impacts on the current results).
+
+
+OrganSegC2F_v1.8
+
+ - OrganSegC2F/run.sh
+     . Fixed a small bug in "Lazy Mode" (log files not automatically moved to snapshot folders).
+
+ - OrganSegC2F/prototxts/
+     . Slightly modified network structures:
+       * Average accuracy on the NIH dataset improved by 0.3% - 0.5%;
+       * Computational overhead (time and memory) increased by less than 2%.
+     . Original prototxts files provided in OrganSegC2F/prototxts_original/ .
+
+
+OrganSegC2F_v1.9
+
+ - OrganSegC2F/coarse2fine_testing.py
+     . Slightly changed the way of taking slices according to the previous round.
+       * To be consistent to the oracle_testing.py;
+       * Little impact on the overall average accuracy (difference < 0.01%).
+
+
+OrganSegC2F_v1.10
+
+ - OrganSegC2F/coarse2fine_testing.py
+     . Fixed a small bug, which may appear when the output volume is empty.
+       * No impact on the overall average accuracy on NIH.
