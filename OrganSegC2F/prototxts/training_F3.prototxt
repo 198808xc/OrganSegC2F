@@ -485,7 +485,7 @@ layer {
     decay_mult: 0
   }
   convolution_param {
-    num_output: 512
+    num_output: 3
     kernel_size: 1
   }
 }
@@ -498,7 +498,7 @@ layer {
     lr_mult: 0
   }
   convolution_param {
-    num_output: 128
+    num_output: 3
     bias_term: false
     kernel_size: 4
     stride: 2
@@ -518,7 +518,7 @@ layer {
     decay_mult: 0
   }
   convolution_param {
-    num_output: 128
+    num_output: 3
     pad: 0
     kernel_size: 1
   }
@@ -553,7 +553,7 @@ layer {
     lr_mult: 0
   }
   convolution_param {
-    num_output: 64
+    num_output: 3
     bias_term: false
     kernel_size: 4
     stride: 2
@@ -573,7 +573,7 @@ layer {
     decay_mult: 0
   }
   convolution_param {
-    num_output: 64
+    num_output: 3
     pad: 0
     kernel_size: 1
   }

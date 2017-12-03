@@ -111,3 +111,15 @@ OrganSegC2F_v1.10
  - OrganSegC2F/coarse2fine_testing.py
      . Fixed a small bug, which may appear when the output volume is empty.
        * No impact on the overall average accuracy on NIH.
+
+OrganSegC2F_v1.11
+
+ - OrganSegC2F/run.sh
+     . Added an export to $LD_LIBRARY_PATH, decreasing the probability of import errors.
+
+ - OrganSegC2F/coarse_training.py
+ - OrganSegC2F/fine_training.py
+     . Fixed a hidden trouble which may cause file writing problems by accident.
+
+ - OrganSegC2F/prototxts/
+     . Undid the modifications in v1.8, as we observed unstable performance in other organs.

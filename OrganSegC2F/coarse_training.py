@@ -39,14 +39,15 @@ if not os.path.isfile(weights):
     urllib.urlretrieve('http://dl.caffe.berkeleyvision.org/fcn8s-heavy-pascal.caffemodel', weights)
 
 if __name__ == '__main__':
-    solver_filename = 'solver_C' + str(slice_thickness) + '.prototxt'
-    solver_file = os.path.join(prototxt_path, solver_filename)
-    output = open(solver_file, 'w')
+    if not os.path.exists(prototxt_path):
+        os.makedirs(prototxt_path)
     prototxt_filename = 'training_C' + str(slice_thickness) + '.prototxt'
     prototxt_file = os.path.join(prototxt_path, prototxt_filename)
-    if not os.path.isfile(prototxt_file):
-        prototxt_file_ = os.path.join('prototxts', prototxt_filename)
-        shutil.copyfile(prototxt_file_, prototxt_file)
+    prototxt_file_ = os.path.join('prototxts', prototxt_filename)
+    shutil.copyfile(prototxt_file_, prototxt_file)
+    solver_filename = 'solver_C' + str(slice_thickness) + '_FD' + str(current_fold) + '.prototxt'
+    solver_file = os.path.join(prototxt_path, solver_filename)
+    output = open(solver_file, 'w')
     output.write('train_net: \"' + prototxt_file + '\"\n')
     output.write('\n' * 1)
     output.write('display: 20\n')

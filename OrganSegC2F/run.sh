@@ -51,7 +51,8 @@ COARSE2FINE_TESTING_GPU=0
 DATA_PATH='/media/Med_4T2/data2/'
 
 ####################################################################################################
-# export PYTHONPATH (related to your path to CAFFE)
+# export LD_LIBRARY_PATH and PYTHONPATH (related to your path to CUDA and CAFFE)
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 export PYTHONPATH=${DATA_PATH}libs/caffe-master/python:$PYTHONPATH
 
 ####################################################################################################

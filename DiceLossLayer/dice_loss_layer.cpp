@@ -63,17 +63,17 @@ void DiceLossLayer<Dtype>::Backward_cpu(
     Dtype* bottom_diff = bottom[0]->mutable_cpu_diff();
     Dtype intersection = 0;
     Dtype Union = 0;
-  for (int i = 0; i < count; ++i) {
-    intersection +=  target[i] * sigmoid_output_data[i];
-    Union += target[i] + sigmoid_output_data[i];
-  }
-  Dtype down = (Union + (Dtype) FLT_EPSILON) * (Union + (Dtype) FLT_EPSILON);
-  for (int i = 0; i < count; ++i) {
-    Dtype up = 2* target[i] * ( Union + (Dtype) FLT_EPSILON ) -
-      2 * intersection - (Dtype) FLT_EPSILON;
-    bottom_diff[i] = - (up / down) * sigmoid_output_data[i] *
-      (1 - sigmoid_output_data[i]);
-  }
+    for (int i = 0; i < count; ++i) {
+      intersection +=  target[i] * sigmoid_output_data[i];
+      Union += target[i] + sigmoid_output_data[i];
+    }
+    Dtype down = (Union + (Dtype) FLT_EPSILON) * (Union + (Dtype) FLT_EPSILON);
+    for (int i = 0; i < count; ++i) {
+      Dtype up = 2 * target[i] * (Union + (Dtype) FLT_EPSILON) -
+        2 * intersection - (Dtype) FLT_EPSILON;
+      bottom_diff[i] = - (up / down) * sigmoid_output_data[i] *
+        (1 - sigmoid_output_data[i]);
+    }
     const Dtype loss_weight = top[0]->cpu_diff()[0];
     caffe_scal(count, loss_weight, bottom_diff);
   }
