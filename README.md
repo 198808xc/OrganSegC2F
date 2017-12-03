@@ -2,7 +2,7 @@
 version 1.10 - Sep 21 2017 - by Yuyin Zhou and Lingxi Xie
 
 **Yuyin Zhou is the main contributor to this repository.**
-  She created the first version of these codes, and Lingxi Xie later revised them for release.
+    She created the first version of these codes, and Lingxi Xie later wrapped up them for release.
 
 If you use our codes, please cite our paper accordingly:
   **Yuyin Zhou**, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
@@ -274,7 +274,23 @@ NOTE: currently we set the maximal rounds of iteration to be 10 in order to obse
 Congratulations! You have finished the entire process. Check your results now!
 
 
-## 5. Versions
+## 5. Pre-trained Models
+
+NOTE: all these models were trained following our default settings.
+    There are 4 folds in the NIH dataset:
+        **Fold #0**: testing on Cases 01, 02, ..., 20;
+        **Fold #1**: testing on Cases 21, 22, ..., 40;
+        **Fold #2**: testing on Cases 41, 42, ..., 61;
+        **Fold #3**: testing on Cases 62, 63, ..., 82.
+    We provided the coarse-scaled and fine-scaled models on each plane of each fold, in total 24 files.
+
+Each of these models is around 538M, the same size as the pre-trained FCN model.
+    Fold #0: Coarse [X](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [Y] [Z]
+    Fold #1: Coarse [X] [Y] [Z]
+    Fold #2: Coarse [X] [Y] [Z]
+    Fold #3: Coarse [X] [Y] [Z]
+
+## 6. Versions
 
 The current version is v1.10.
 
@@ -283,7 +299,7 @@ To access old versions, please visit our project page: http://lingxixie.com/Proj
 You can also view CHANGE_LOG.txt for the history of versions.
 
 
-## 6. Contact Information
+## 7. Contact Information
 
 If you encounter any problems in using these codes, please contact Lingxi Xie (198808xc@gmail.com).
 
