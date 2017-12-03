@@ -289,14 +289,32 @@ There are 4 folds in the NIH dataset:
 We provided the coarse-scaled and fine-scaled models on each plane of each fold, in total 24 files.
 
 Each of these models is around 512MB, the same size as the pre-trained FCN model.
-  * **Fold #0**: Coarse [[X]](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [[Y]] [[Z]]
-                 Fine   [[X]] [[Y]] [[Z]]
-  * **Fold #1**: Coarse [[X]](https://drive.google.com/open?id=1n0-1QE4ZebXts8aVQmjM6hkNPpgRCR_c) [[Y]] [[Z]]
-                 Fine   [[X]] [[Y]] [[Z]]
-  * **Fold #2**: Coarse [[X]](https://drive.google.com/open?id=1qUo7zeHgU5fPFGFmHQfgQlhNaYqLfYpf) [[Y]] [[Z]]
-                 Fine   [[X]] [[Y]] [[Z]]
-  * **Fold #3**: Coarse [[X]](https://drive.google.com/open?id=1V7DT_mGbYhIChwiodYrVupdfVnetjdCD) [[Y]] [[Z]]
-                 Fine   [[X]] [[Y]] [[Z]]
+  * **Fold #0**: Coarse [[X]](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB)
+                        [[Y]](https://drive.google.com/open?id=1VHI3OhByrcYNrI7FnbBsoh86f_Jp0RLY)
+                        [[Z]](https://drive.google.com/open?id=17hNt545bRAlL6uHb-gyjx9MNgjfFrgs5)
+                 Fine   [[X]](https://drive.google.com/open?id=1alVP2BiHtSsK8gO8WwlOPlZw1J9thymS)
+                        [[Y]](https://drive.google.com/open?id=1ad2DFtPK1cNZs784-csOx8l7i4M_mT3i)
+                        [[Z]](https://drive.google.com/open?id=1y0H7_0R5Dvnj90UoCgjKhoa5aOmDeZhW)
+  * **Fold #1**: Coarse [[X]](https://drive.google.com/open?id=1n0-1QE4ZebXts8aVQmjM6hkNPpgRCR_c)
+                        [[Y]](https://drive.google.com/open?id=1L4agEV7f-AWHrGWbmF1PJOIW2-JLxQ7s)
+                        [[Z]](https://drive.google.com/open?id=1VvrGJ_DNnKfEhRcaGSnFvDre3v-BVAXA)
+                 Fine   [[X]](https://drive.google.com/open?id=1AMEtHhuWSLR--hFrJpSyaJDvA80nzBv9)
+                        [[Y]](https://drive.google.com/open?id=1jDv4xtzjI1KBG1BnkMhoh0j-YKMTe-aM)
+                        [[Z]](https://drive.google.com/open?id=1zGKzQgbH-oeoTGQRwORe2mOCMoWSvDU6)
+  * **Fold #2**: Coarse [[X]](https://drive.google.com/open?id=1qUo7zeHgU5fPFGFmHQfgQlhNaYqLfYpf)
+                        [[Y]](https://drive.google.com/open?id=13h7xXyJqgnm6Cd_LCXJmJEvEv2hwjPja)
+                        [[Z]](https://drive.google.com/open?id=1kxxFK1giZ2E7t4aZE_2sI1Eds3WaLWDj)
+                 Fine   [[X]](https://drive.google.com/open?id=1iGrWxeq0m4Wj0Whq7zWVN6LpDLohCIhX)
+                        [[Y]](https://drive.google.com/open?id=1j5ohZKUXna2fSgp8yYCz4EVlhIMOsatT)
+                        [[Z]](https://drive.google.com/open?id=1Jro5uVjC0kYMyVapjtidIrQcPCRfwXil)
+  * **Fold #3**: Coarse [[X]](https://drive.google.com/open?id=1V7DT_mGbYhIChwiodYrVupdfVnetjdCD)
+                        [[Y]](https://drive.google.com/open?id=1APCiNZrMgQQaMyihZMosJvg9OWR9pXnj)
+                        [[Z]](https://drive.google.com/open?id=1xU8qz0vVaLvdm77xaPuQgQEJw4n0Psgl)
+                 Fine   [[X]](https://drive.google.com/open?id=1eQyLEy-mVzGka2gV0rnCHCOJibL45IoU)
+                        [[Y]](https://drive.google.com/open?id=1oDUhUxOOSNQoF87McYyyOY6J5EOGdBU_)
+                        [[Z]](https://drive.google.com/open?id=1-UM5GnsmZ8beFu_3V3vLpDyaGTwWz1XE)
+
+If you encounter any problems in downloading these files, please contact Lingxi Xie (198808xc@gmail.com).
 
 ## 6. Versions
 
