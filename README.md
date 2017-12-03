@@ -275,12 +275,11 @@ c) Run this manuscript!
 Congratulations! You have finished the entire process. Check your results now!
 
 
-## 5. Pre-trained Models
+## 5. Pre-trained Models on the NIH Dataset
 
+**NOTE**: all these models were trained following our default settings.
 
-NOTE: all these models were trained following our default settings.
-
-There are 4 folds in the NIH dataset:
+The 82 cases in the NIH dataset are split into 4 folds:
   * **Fold #0**: testing on Cases 01, 02, ..., 20;
   * **Fold #1**: testing on Cases 21, 22, ..., 40;
   * **Fold #2**: testing on Cases 41, 42, ..., 61;
