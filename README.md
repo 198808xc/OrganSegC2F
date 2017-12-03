@@ -1,8 +1,11 @@
 # OrganSegC2F: a coarse-to-fine organ segmentation framework
-version 1.10 - Sep 21 2017 - by Lingxi Xie
+version 1.10 - Sep 21 2017 - by Yuyin Zhou and Lingxi Xie
+
+**Yuyin Zhou created the first version of these codes,
+  and Lingxi Xie later revised them for release.**
 
 If you use our codes, please cite our paper accordingly:
-  Yuyin Zhou, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
+  **Yuyin Zhou**, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
     "A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",
     in International Conference on MICCAI, Quebec City, Quebec, Canada, 2017.
 
