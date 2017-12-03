@@ -1,8 +1,9 @@
 # OrganSegC2F: a coarse-to-fine organ segmentation framework
-version 1.10 - Sep 21 2017 - by Yuyin Zhou and Lingxi Xie
+version 1.11 - Dec 3 2017 - by Yuyin Zhou and Lingxi Xie
 
 **Yuyin Zhou is the main contributor to this repository.**
-    She created the first version of these codes, and Lingxi Xie later wrapped up them for release.
+    She created the framework and main functions of this algorithm,
+    Lingxi Xie later wrapped up these codes for release.
 
 If you use our codes, please cite our paper accordingly:
   **Yuyin Zhou**, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
@@ -288,14 +289,14 @@ There are 4 folds in the NIH dataset:
 We provided the coarse-scaled and fine-scaled models on each plane of each fold, in total 24 files.
 
 Each of these models is around 512MB, the same size as the pre-trained FCN model.
-  * Fold #0: Coarse [[X]](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [[Y]] [[Z]]
-             Fine   [[X]] [[Y]] [[Z]]
-  * Fold #1: Coarse [[X]](https://drive.google.com/open?id=1n0-1QE4ZebXts8aVQmjM6hkNPpgRCR_c) [[Y]] [[Z]]
-             Fine   [[X]] [[Y]] [[Z]]
-  * Fold #2: Coarse [[X]](https://drive.google.com/open?id=1qUo7zeHgU5fPFGFmHQfgQlhNaYqLfYpf) [[Y]] [[Z]]
-             Fine   [[X]] [[Y]] [[Z]]
-  * Fold #3: Coarse [[X]](https://drive.google.com/open?id=1V7DT_mGbYhIChwiodYrVupdfVnetjdCD) [[Y]] [[Z]]
-             Fine   [[X]] [[Y]] [[Z]]
+  * **Fold #0**: Coarse [[X]](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [[Y]] [[Z]]
+                 Fine   [[X]] [[Y]] [[Z]]
+  * **Fold #1**: Coarse [[X]](https://drive.google.com/open?id=1n0-1QE4ZebXts8aVQmjM6hkNPpgRCR_c) [[Y]] [[Z]]
+                 Fine   [[X]] [[Y]] [[Z]]
+  * **Fold #2**: Coarse [[X]](https://drive.google.com/open?id=1qUo7zeHgU5fPFGFmHQfgQlhNaYqLfYpf) [[Y]] [[Z]]
+                 Fine   [[X]] [[Y]] [[Z]]
+  * **Fold #3**: Coarse [[X]](https://drive.google.com/open?id=1V7DT_mGbYhIChwiodYrVupdfVnetjdCD) [[Y]] [[Z]]
+                 Fine   [[X]] [[Y]] [[Z]]
 
 ## 6. Versions
 
