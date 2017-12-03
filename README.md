@@ -290,11 +290,11 @@ We provided the coarse-scaled and fine-scaled models on each plane of each fold,
 Each of these models is around 512MB, the same size as the pre-trained FCN model.
   * Fold #0: Coarse [[X]](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [[Y]] [[Z]]
              Fine   [[X]] [[Y]] [[Z]]
-  * Fold #1: Coarse [[X]] [[Y]] [[Z]]
+  * Fold #1: Coarse [[X]](https://drive.google.com/open?id=1n0-1QE4ZebXts8aVQmjM6hkNPpgRCR_c) [[Y]] [[Z]]
              Fine   [[X]] [[Y]] [[Z]]
-  * Fold #2: Coarse [[X]] [[Y]] [[Z]]
+  * Fold #2: Coarse [[X]](https://drive.google.com/open?id=1qUo7zeHgU5fPFGFmHQfgQlhNaYqLfYpf) [[Y]] [[Z]]
              Fine   [[X]] [[Y]] [[Z]]
-  * Fold #3: Coarse [[X]] [[Y]] [[Z]]
+  * Fold #3: Coarse [[X]](https://drive.google.com/open?id=1V7DT_mGbYhIChwiodYrVupdfVnetjdCD) [[Y]] [[Z]]
              Fine   [[X]] [[Y]] [[Z]]
 
 ## 6. Versions
