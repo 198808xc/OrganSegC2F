@@ -104,7 +104,7 @@ It is highly recommended to use one or more modern GPUs for computation.
 
 Please follow these steps to reproduce our results on the NIH pancreas segmentation dataset.
 
-NOTE: Here we only provide basic steps to run our codes on the NIH dataset.
+**NOTE**: Here we only provide basic steps to run our codes on the NIH dataset.
     For more detailed analysis and empirical guidelines for parameter setting
     (this is very important especially when you are using our codes on other datasets),
     please refer to our technical report (check our webpage for updates).
@@ -225,7 +225,7 @@ c) Run this manuscript!
 
 #### 4.7 Oracle testing (optional) (requires: 4.6)
 
-NOTE: Without this step, you can also run the coarse-to-fine testing process.
+**NOTE**: Without this step, you can also run the coarse-to-fine testing process.
     This stage is still recommended, so that you can check the quality of the fine-scaled models.
 
 ###### 4.7.1 Check run.sh and set $ORACLE_TESTING_PLANE and $ORACLE_TESTING_GPU.
@@ -240,7 +240,7 @@ NOTE: Without this step, you can also run the coarse-to-fine testing process.
 
 #### 4.8 Oracle fusion (optional) (requires: 4.7)
 
-NOTE: Without this step, you can also run the coarse-to-fine testing process.
+**NOTE**: Without this step, you can also run the coarse-to-fine testing process.
     This stage is still recommended, so that you can check the quality of the fine-scaled models.
 
 ###### 4.8.1 Fusion is perfomed on CPU and all X|Y|Z planes are combined and executed once.
@@ -264,7 +264,7 @@ NOTE: Without this step, you can also run the coarse-to-fine testing process.
     This function calls both fine-scaled testing and fusion codes, so both GPU and CPU are used.
         In our future release, we will implement post-processing in C for acceleration.
 
-NOTE: currently we set the maximal rounds of iteration to be 10 in order to observe the convergence.
+**NOTE**: currently we set the maximal rounds of iteration to be 10 in order to observe the convergence.
     Most often, it reaches an inter-DSC of >95% after 2-3 iterations.
     If you hope to save time, you can slight modify the codes in coarse2fine_testing.py.
     Each iteration takes ~20 seconds on a Titan-X Maxwell GPU, or ~15s on a Titan-X Pascal GPU.
@@ -276,19 +276,26 @@ Congratulations! You have finished the entire process. Check your results now!
 
 ## 5. Pre-trained Models
 
-NOTE: all these models were trained following our default settings.
-    There are 4 folds in the NIH dataset:
-        **Fold #0**: testing on Cases 01, 02, ..., 20;
-        **Fold #1**: testing on Cases 21, 22, ..., 40;
-        **Fold #2**: testing on Cases 41, 42, ..., 61;
-        **Fold #3**: testing on Cases 62, 63, ..., 82.
-    We provided the coarse-scaled and fine-scaled models on each plane of each fold, in total 24 files.
 
-Each of these models is around 538M, the same size as the pre-trained FCN model.
-    Fold #0: Coarse [X](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [Y] [Z]
-    Fold #1: Coarse [X] [Y] [Z]
-    Fold #2: Coarse [X] [Y] [Z]
-    Fold #3: Coarse [X] [Y] [Z]
+NOTE: all these models were trained following our default settings.
+
+There are 4 folds in the NIH dataset:
+  * **Fold #0**: testing on Cases 01, 02, ..., 20;
+  * **Fold #1**: testing on Cases 21, 22, ..., 40;
+  * **Fold #2**: testing on Cases 41, 42, ..., 61;
+  * **Fold #3**: testing on Cases 62, 63, ..., 82.
+ 
+We provided the coarse-scaled and fine-scaled models on each plane of each fold, in total 24 files.
+
+Each of these models is around 512MB, the same size as the pre-trained FCN model.
+  * Fold #0: Coarse [[X]](https://drive.google.com/open?id=14FhLfolK8fHxe5Z8zPZeNUVZLBta5yaB) [[Y]] [[Z]]
+             Fine   [[X]] [[Y]] [[Z]]
+  * Fold #1: Coarse [[X]] [[Y]] [[Z]]
+             Fine   [[X]] [[Y]] [[Z]]
+  * Fold #2: Coarse [[X]] [[Y]] [[Z]]
+             Fine   [[X]] [[Y]] [[Z]]
+  * Fold #3: Coarse [[X]] [[Y]] [[Z]]
+             Fine   [[X]] [[Y]] [[Z]]
 
 ## 6. Versions
 
