@@ -1,11 +1,13 @@
 # OrganSegC2F: a coarse-to-fine organ segmentation framework
 version 1.11 - Dec 3 2017 - by Yuyin Zhou and Lingxi Xie
 
-**Yuyin Zhou is the main contributor to this repository.**
-    She created the framework and main functions of this algorithm,
-    Lingxi Xie later wrapped up these codes for release.
+##### **Yuyin Zhou is the main contributor to this repository.**
 
-If you use our codes, please cite our paper accordingly:
+Yuyin Zhou proposed the algorithm, created the framework and implemented main functions.
+Lingxi Xie later wrapped up these codes for release.
+
+###### If you use our codes, please cite our paper accordingly:
+
   **Yuyin Zhou**, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
     "A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",
     in International Conference on MICCAI, Quebec City, Quebec, Canada, 2017.
@@ -14,8 +16,9 @@ https://arxiv.org/abs/1612.08230
 
 http://lingxixie.com/Projects/OrganSegC2F.html
 
-All the materials released in this library can ONLY be used for RESEARCH purposes.
-  The authors preserve the copyright and all legal rights of these codes.
+All the materials released in this library can **ONLY** be used for **RESEARCH** purposes.
+
+The authors and their institution (JHU/JHMI) preserve the copyright and all legal rights of these codes.
 
 
 ## 1. Introduction
@@ -321,7 +324,7 @@ If you encounter any problems in downloading these files, please contact Lingxi 
 
 ## 6. Versions
 
-The current version is v1.10.
+The current version is v1.11.
 
 To access old versions, please visit our project page: http://lingxixie.com/Projects/OrganSegC2F.html.
 
@@ -330,6 +333,7 @@ You can also view CHANGE_LOG.txt for the history of versions.
 
 ## 7. Contact Information
 
-If you encounter any problems in using these codes, please contact Lingxi Xie (198808xc@gmail.com).
+If you encounter any problems in using these codes, please open an issue in this repository.
+You may also contact Yuyin Zhou (zhouyuyiner@gmail.com) or Lingxi Xie (198808xc@gmail.com).
 
 Thanks for your interest! Have fun!
