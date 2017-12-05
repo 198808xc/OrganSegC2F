@@ -158,14 +158,14 @@ Please follow these steps to reproduce our results on the NIH pancreas segmentat
         as well as the "is_organ" function in utils.py to define your mapping function flexibly.
 
 
-![alt text](https://github.com/198808xc/OrganSegC2F/blob/master/icon.png)
+![](https://github.com/198808xc/OrganSegC2F/blob/master/icon.png)
 **LAZY MODE!**
-![alt text](https://github.com/198808xc/OrganSegC2F/blob/master/icon.png)
+![](https://github.com/198808xc/OrganSegC2F/blob/master/icon.png)
 
 You can run all the following modules with **one** execution!
-a) Enable everything (except initialization) in the beginning part.
-b) Set all the "PLANE" variables as "A" (4 in total) in the following part.
-c) Run this manuscript!
+  * a) Enable everything (except initialization) in the beginning part.
+  * b) Set all the "PLANE" variables as "A" (4 in total) in the following part.
+  * c) Run this manuscript!
 
 
 #### 4.3 Coarse-scaled training (requires: 4.2)
