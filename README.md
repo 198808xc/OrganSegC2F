@@ -1,12 +1,12 @@
 # OrganSegC2F: a coarse-to-fine organ segmentation framework
 version 1.11 - Dec 3 2017 - by Yuyin Zhou and Lingxi Xie
 
-##### **Yuyin Zhou is the main contributor to this repository.**
+#### **Yuyin Zhou is the main contributor to this repository.**
 
 Yuyin Zhou proposed the algorithm, created the framework and implemented main functions.
 Lingxi Xie later wrapped up these codes for release.
 
-###### If you use our codes, please cite our paper accordingly:
+#### If you use our codes, please cite our paper accordingly:
 
   **Yuyin Zhou**, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
     "A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",
