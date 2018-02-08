@@ -20,6 +20,10 @@ All the materials released in this library can **ONLY** be used for **RESEARCH**
 
 The authors and their institution (JHU/JHMI) preserve the copyright and all legal rights of these codes.
 
+**Before you start, please note that there is a LAZY MODE,
+  which allows you to run the entire framework with ONE click.
+  Check the contents before Section 4.3 for details.**
+
 
 ## 1. Introduction
 
