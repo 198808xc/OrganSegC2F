@@ -27,9 +27,8 @@ The authors and their institution (JHU/JHMI) preserve the copyright and all lega
 
 ## 1. Introduction
 
-
 OrganSegC2F is a code package for our paper:
-    Yuyin Zhou, Lingxi Xie, Wei Shen, Yan Wang, Elliot Fishman, Alan Yuille,
+    Yuyin Zhou, Lingxi Xie, Wei Shen, Yan Wang, Elliot K. Fishman, Alan L. Yuille,
         "A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",
         in International Conference on MICCAI, Quebec City, Quebec, 2017.
 
@@ -43,7 +42,7 @@ OrganSegC2F is based on the state-of-the-art deep learning techniques.
     We make use of the python interface of CAFFE, named pyCAFFE.
 
 It is highly recommended to use one or more modern GPUs for computation.
-    Using CPUs will cost at least 50x more time in computation.
+    Using CPUs will take at least 50x more time in computation.
 
 
 ## 2. File List
@@ -325,6 +324,7 @@ Each of these models is around 512MB, the same size as the pre-trained FCN model
                  (**Accuracy**: coarse 75.72%, oracle 84.26%, coarse-to-fine 82.91%)
 
 If you encounter any problems in downloading these files, please contact Lingxi Xie (198808xc@gmail.com).
+
 
 ## 6. Versions
 
