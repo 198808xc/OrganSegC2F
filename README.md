@@ -1,6 +1,12 @@
 # OrganSegC2F: a coarse-to-fine organ segmentation framework
 version 1.11 - Dec 3 2017 - by Yuyin Zhou and Lingxi Xie
 
+## Please note: an improved version of OrganSegC2F named OrganSegRSTN is available!
+
+It outperforms OrganSegC2F by 84.50% vs. 82.37% on the NIH pancreas segmentation dataset.
+
+https://github.com/198808xc/OrganSegRSTN
+
 #### **Yuyin Zhou is the main contributor to this repository.**
 
 Yuyin Zhou proposed the algorithm, created the framework and implemented main functions.
