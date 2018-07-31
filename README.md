@@ -5,6 +5,10 @@ version 1.11 - Dec 3 2017 - by Yuyin Zhou and Lingxi Xie
 
 It outperforms OrganSegC2F by 84.50% vs. 82.37% on the NIH pancreas segmentation dataset.
 
+#### Also NOTE: some functions have been optimized in the repository OrganSegRSTN, but not yet been transferred here.
+  I will do these things in the near future - they do not impact performance, but will make the testing process MUCH faster.
+
+
 #### **Yuyin Zhou is the main contributor to this repository.**
 
 Yuyin Zhou proposed the algorithm, created the framework and implemented main functions.
